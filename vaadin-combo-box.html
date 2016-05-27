@@ -418,6 +418,7 @@ Custom property | Description | Default
     _onBlur: function() {
       if (!this._closeOnBlurIsPrevented) {
         this.close();
+        this.fire("blur");
       }
     },
 
